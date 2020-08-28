@@ -1,8 +1,67 @@
+@import "../../constants/variables.scss";
+
 header {
-  height: 100px;
-  background-color: purple;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 40px;
+  height: 150px;
+  background-color: #ffffff;
+  padding: 0 30px;
+
+  .top-section {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+      display: flex;
+      align-items: center;
+
+      p {
+        font-family: "PlayfairMedium";
+        font-size: 1.3rem;
+        color: $purple;
+      }
+
+      img {
+        width: 22px;
+        height: 22px;
+        margin-right: 20px;
+      }
+    }
+
+    .social-links {
+      display: flex;
+      align-items: center;
+
+      .icon {
+        margin: 0 20px;
+        cursor: pointer;
+      }
+    }
+
+    .extra-links {
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 20px;
+        height: 20px;
+        object-fit: contain;
+        margin: 0 15px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .bottom-section {
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .link {
+      margin: 0 30px;
+      font-size: 1.4rem;
+      color: $purple;
+    }
+  }
 }

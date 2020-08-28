@@ -8,6 +8,8 @@ body {
   font-family: "PlayfairRegular";
 }
 
+@import "./constants/variables.scss";
+
 @font-face {
   font-family: "PlayfairBold";
   src: url(./assets/fonts/PlayfairDisplay-Bold.ttf);

@@ -1,0 +1,32 @@
+.banner {
+  height: 70vh;
+  background-color: #baafab;
+  display: flex;
+
+  .content {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 100px;
+
+    .title {
+      font-size: 48px;
+      color: #ffffff;
+    }
+  }
+
+  .image-container {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100vh;
+      object-fit: contain;
+      margin-bottom: -30vh;
+    }
+  }
+}
