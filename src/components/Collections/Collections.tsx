@@ -1,6 +1,6 @@
 import React from "react";
 import "./Collections.scss";
-import { WomenCollection, Bestsellers, Dresses, DenimJackets } from "../Cards";
+import { WomenCollection, Bestsellers, Dresses, DenimJackets } from "./Cards";
 
 const Collections = () => (
   <div className="collections">

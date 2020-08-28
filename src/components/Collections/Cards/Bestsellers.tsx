@@ -1,6 +1,6 @@
 import React from "react";
 import "./cards.scss";
-import { purple } from "../../constants/Colors";
+import { purple } from "../../../constants/Colors";
 
 const Bestsellers = () => (
   <div className="bestsellers">

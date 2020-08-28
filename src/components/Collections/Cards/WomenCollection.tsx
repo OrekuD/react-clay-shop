@@ -1,6 +1,6 @@
 import React from "react";
 import "./cards.scss";
-import Image from "../../assets/images/image-1.png";
+import Image from "../../../assets/images/image-1.png";
 
 const WomenCollection = () => (
   <div className="women-collection">
