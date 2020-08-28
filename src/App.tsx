@@ -1,13 +1,13 @@
 import React from "react";
 import "./App.scss";
-import { Header, Banner } from "./components";
+import { Header, Banner, Collections } from "./components";
 
 function App() {
   return (
     <>
       <Header />
       <Banner />
-      <Header />
+      <Collections />
     </>
   );
 }

@@ -1,0 +1,109 @@
+$largeCardWidth: calc(((100vw - 200px) / 2) - 20px);
+$largeCardHeight: calc((((100vw - 200px) / 2) - 20px) * 0.788);
+$smallCardWidth: calc(((((100vw - 200px) / 2) - 20px) / 2) - 10px);
+$smallCardHeight: calc((((((100vw - 200px) / 2) - 20px) * 0.788) / 2) - 10px);
+
+@import "../../constants/variables.scss";
+
+.women-collection {
+  width: $largeCardWidth;
+  height: $largeCardHeight;
+  border-radius: 10px;
+  background-image: linear-gradient(#d1bdc9, #8e7e88);
+  padding-top: 40px;
+  overflow: hidden;
+  position: relative;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    margin-top: 18px;
+  }
+
+  .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 45px;
+
+    .sub-title {
+      font-family: "MuliRegular";
+      font-size: 18px;
+      color: #ffffff;
+      margin: 15px 0;
+    }
+  }
+}
+
+.bestsellers {
+  width: $smallCardWidth;
+  height: $smallCardHeight;
+  border-radius: 10px;
+  background-color: #efeff4;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 30px;
+  margin-right: 20px;
+
+  .sub-title {
+    font-family: "MuliRegular";
+    font-size: 18px;
+    color: $purple;
+    margin-bottom: 30px;
+  }
+}
+
+.dresses {
+  width: $smallCardWidth;
+  height: $smallCardHeight;
+  border-radius: 10px;
+  background-image: radial-gradient(#62579b, #4f477a, #4f477a);
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    z-index: 0;
+    margin: 20px 0 0 40px;
+  }
+
+  .content {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.denim-jacket {
+  width: $largeCardWidth;
+  height: $smallCardHeight;
+  border-radius: 10px;
+  background-image: linear-gradient(#eda2b6, #efccca);
+}
+
+.card-title {
+  color: #ffffff;
+  font-size: 30px;
+}
+
+.card-button {
+  color: #ffffff;
+  font-family: "MuliBold";
+  font-size: 14px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  width: 96px;
+  height: 32px;
+  border: none;
+  margin-top: 10px;
+}

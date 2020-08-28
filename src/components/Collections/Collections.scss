@@ -1,0 +1,13 @@
+.collections {
+  padding: 30px 100px;
+  display: flex;
+  align-items: center;
+
+  .right-container {
+    padding-left: 20px;
+
+    .top-section {
+      display: flex;
+    }
+  }
+}
