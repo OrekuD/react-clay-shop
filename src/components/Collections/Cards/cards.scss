@@ -88,7 +88,7 @@ $smallCardHeight: calc((((((100vw - 200px) / 2) - 20px) * 0.788) / 2) - 10px);
   width: $largeCardWidth;
   height: $smallCardHeight;
   border-radius: 10px;
-  background-image: linear-gradient(#eda2b6, #efccca);
+  background-image: linear-gradient(to right, #eda2b6, #f1cfcd);
   position: relative;
   overflow: hidden;
 
