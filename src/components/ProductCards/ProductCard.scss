@@ -1,0 +1,157 @@
+@import "../../constants/variables.scss";
+
+.cards-container {
+  padding: 20px 100px;
+}
+
+.dress-product-card {
+  height: calc((100vw - 200px) * 0.57);
+  //   background: red;
+  padding: 40px 20px;
+  display: flex;
+  background: white;
+
+  .image-section {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .active-image {
+      width: 80%;
+      height: 70%;
+      object-fit: contain;
+      align-self: center;
+      //   background: orange;
+    }
+  }
+
+  .product-content {
+    width: 50%;
+    height: 100%;
+
+    .row-1 {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+
+      .badge {
+        width: 96px;
+        height: 32px;
+        border-radius: 5px;
+        background-color: $lightgrey;
+        display: grid;
+        place-items: center;
+
+        p {
+          font-size: 14px;
+          color: black;
+          font-family: "MuliSemiBold";
+          margin-bottom: 4px;
+        }
+      }
+
+      .heart-icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        background-color: $lightgrey;
+        display: grid;
+        place-items: center;
+
+        img {
+          width: 55%;
+          height: 55%;
+          object-fit: contain;
+        }
+      }
+    }
+
+    .card-title {
+      color: $purple;
+      font-size: 48px;
+      margin-top: 3px;
+
+      &:first-of-type {
+        margin-top: 30px;
+      }
+    }
+
+    .rating-container {
+      display: flex;
+      align-items: center;
+      margin-top: 15px;
+
+      .star {
+        margin-right: 10px;
+      }
+
+      p {
+        font-size: 16px;
+        font-family: "MuliRegular";
+      }
+    }
+
+    .tabs {
+      margin: 20px 0;
+      width: 92%;
+      display: flex;
+
+      .tab {
+        flex: 1;
+        display: grid;
+        place-items: center;
+        padding: 10px 0;
+        border-bottom: 1.2px solid lightgrey;
+        transition: 0.2s ease all;
+
+        p {
+          font-family: "MuliRegular";
+          cursor: pointer;
+        }
+      }
+    }
+
+    .tab-content {
+      padding-top: 5px;
+
+      .info-container {
+        p {
+          color: #8e8e93;
+          font-family: "MuliRegular";
+        }
+
+        .specs-container {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-top: 25px;
+
+          p {
+            color: $purple;
+            margin: 5px 0;
+            color: $purple;
+          }
+
+          .sizes {
+            display: flex;
+
+            .size {
+              width: 68px;
+              height: 44px;
+              display: grid;
+              place-items: center;
+              border: 1px solid grey;
+              margin-right: 10px;
+              border-radius: 5px;
+              cursor: pointer;
+              transition: 0.2s ease-out all;
+            }
+          }
+        }
+      }
+    }
+  }
+}
