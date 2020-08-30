@@ -1,13 +1,14 @@
 import React, { useState } from "react";
-import "./ProductCard.scss";
-import Image1 from "../../assets/images/dress-1.jpg";
-import Image2 from "../../assets/images/dress-2.png";
-import Image3 from "../../assets/images/dress-3.png";
-import Image4 from "../../assets/images/dress-4.png";
-import Image5 from "../../assets/images/dress-5.png";
-import HeartIcon from "../../assets/icons/heart_icn.png";
-import { Star } from "../../svg/Svg";
-import { pink, lightgrey, purple } from "../../constants/Colors";
+import "./DressProductCard.scss";
+import Image1 from "../../../assets/images/dress-1.jpg";
+import Image2 from "../../../assets/images/dress-2.png";
+import Image3 from "../../../assets/images/dress-3.png";
+import Image4 from "../../../assets/images/dress-4.png";
+import Image5 from "../../../assets/images/dress-5.png";
+import HeartIcon from "../../../assets/icons/heart_icn.png";
+import { Star } from "../../../svg/Svg";
+import { pink, lightgrey, purple } from "../../../constants/Colors";
+import { Info, Brand, Delivery } from "./Tabs";
 
 const images = [
   { source: Image1 },
@@ -19,54 +20,10 @@ const images = [
 
 const starRatings = [pink, pink, pink, pink, lightgrey];
 
-const sizes = ["XS", "S", "M"];
-
-const Info = () => {
-  const [activeColorIndex, setActiveColorIndex] = useState<number>(1);
-  const [activeSizeIndex, setActiveSizeIndex] = useState<number>(0);
-
-  return (
-    <div className="info-container">
-      <p>
-        Dress with tulle and collar Peter Pan from REDValentino (Red Valentino).
-        Peter Pan collar, tulle panels, sleeveless model, concealed back zipper
-        and pleated skirt. Black colour.
-      </p>
-      <div className="specs-container">
-        <div className="sizes-container">
-          <p>Size</p>
-          <div className="sizes">
-            {sizes.map((size, index) => (
-              <div
-                onClick={() => setActiveColorIndex(index)}
-                className="size"
-                style={{
-                  borderWidth: activeColorIndex === index ? 0 : 1,
-                  backgroundColor:
-                    activeColorIndex === index ? pink : "transparent",
-                }}
-                key={index}
-              >
-                <p
-                  style={{
-                    color: activeColorIndex === index ? "white" : purple,
-                  }}
-                >
-                  {size}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
-
 const tabs = [
   { name: "Info", content: <Info /> },
-  { name: "Brand", content: <Info /> },
-  { name: "Delivery", content: <Info /> },
+  { name: "Brand", content: <Brand /> },
+  { name: "Delivery", content: <Delivery /> },
 ];
 
 const DressProductCard = () => {
@@ -84,7 +41,7 @@ const DressProductCard = () => {
           />
         </div>
         <div className="product-content">
-          <div className="row-1">
+          <div className="row">
             <div className="badge">
               <p>Popular</p>
             </div>
@@ -117,6 +74,11 @@ const DressProductCard = () => {
             ))}
           </div>
           <div className="tab-content">{tabs[activeTabIndex].content}</div>
+          <div className="bottom-row">
+            <p className="card-title">$1315</p>
+            <button className="button-main">Shop Now</button>
+            <button className="button-main">Add to cart</button>
+          </div>
         </div>
       </div>
     </div>

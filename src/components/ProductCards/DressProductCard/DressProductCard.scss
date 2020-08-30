@@ -1,4 +1,4 @@
-@import "../../constants/variables.scss";
+@import "../../../constants/variables.scss";
 
 .cards-container {
   padding: 20px 100px;
@@ -31,7 +31,7 @@
     width: 50%;
     height: 100%;
 
-    .row-1 {
+    .row {
       display: flex;
       width: 100%;
       align-items: center;
@@ -125,8 +125,7 @@
 
         .specs-container {
           display: flex;
-          align-items: center;
-          justify-content: space-between;
+          // align-items: center;
           margin-top: 25px;
 
           p {
@@ -149,6 +148,67 @@
               cursor: pointer;
               transition: 0.2s ease-out all;
             }
+          }
+
+          .colors-container {
+            margin-left: 30px;
+
+            .colors {
+              display: flex;
+              margin-top: 10px;
+
+              .active-color {
+                width: 34px;
+                height: 34px;
+                display: grid;
+                place-items: center;
+                border: 2px solid $purple;
+                margin-right: 10px;
+                border-radius: 4px;
+                transition: 0.2s ease all;
+              }
+
+              .color {
+                width: 24px;
+                height: 24px;
+                border-radius: 2px;
+                cursor: pointer;
+                transition: 0.2s ease-out all;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .bottom-row {
+      display: flex;
+      align-items: center;
+
+      .card-title {
+        font-size: 34px;
+      }
+
+      button {
+        margin-top: 30px;
+
+        &:first-of-type {
+          margin-left: 30px;
+          background-color: $pink;
+          color: white;
+
+          &:hover {
+            background-color: $pink;
+            color: white;
+          }
+        }
+
+        &:last-of-type {
+          margin-left: 20px;
+
+          &:hover {
+            background-color: white;
+            color: $pink;
           }
         }
       }

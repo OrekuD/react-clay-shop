@@ -16,7 +16,7 @@ const Products = () => (
             </div>
             <div className="bottom-section">
               <p className="card-title">${price}</p>
-              <button>Show Now</button>
+              <button className="button-main">Show Now</button>
             </div>
           </div>
         </div>
