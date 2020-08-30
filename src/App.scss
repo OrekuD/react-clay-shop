@@ -50,6 +50,11 @@ body {
 
 .wrapper {
   padding: 0 100px;
+
+  .section {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 @import "./constants/variables.scss";

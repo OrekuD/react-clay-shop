@@ -7,13 +7,19 @@ import {
   Products,
   DressProduct,
   ElegantDress,
+  WhiteDress,
 } from "./components";
 
 function App() {
   return (
     <>
       <Header />
-      <ElegantDress />
+      <div className="wrapper">
+        <div className="section">
+          <ElegantDress />
+          <WhiteDress />
+        </div>
+      </div>
       <Banner />
       <Collections />
       <Products />
