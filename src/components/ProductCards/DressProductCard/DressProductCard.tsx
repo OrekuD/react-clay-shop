@@ -6,7 +6,7 @@ import Image3 from "../../../assets/images/dress-3.png";
 import Image4 from "../../../assets/images/dress-4.png";
 import Image5 from "../../../assets/images/dress-5.png";
 import HeartIcon from "../../../assets/icons/heart_icn.png";
-import { Star } from "../../../svg/Svg";
+import { Star, ChevronRight, ChevronLeft } from "../../../svg/Svg";
 import { pink, lightgrey, purple } from "../../../constants/Colors";
 import { Info, Brand, Delivery } from "./Tabs";
 
@@ -33,12 +33,50 @@ const DressProductCard = () => {
   return (
     <div className="cards-container">
       <div className="dress-product-card">
-        <div className="image-section">
-          <img
-            src={images[activeImageIndex].source}
-            alt="Product"
-            className="active-image"
-          />
+        <div className="images-section">
+          <div className="active-image-container">
+            <div
+              className="prev-icon"
+              onClick={() =>
+                setActiveImageIndex(
+                  activeImageIndex === 0
+                    ? images.length - 1
+                    : activeImageIndex - 1
+                )
+              }
+            >
+              <ChevronLeft size={12} color="grey" />
+            </div>
+            <img
+              src={images[activeImageIndex].source}
+              alt="Product"
+              className="active-image"
+            />
+            <div
+              className="next-icon"
+              onClick={() =>
+                setActiveImageIndex(
+                  activeImageIndex === images.length - 1
+                    ? 0
+                    : activeImageIndex + 1
+                )
+              }
+            >
+              <ChevronRight size={12} color="grey" />
+            </div>
+          </div>
+          <div className="all-images">
+            {images.map(({ source }, index) => (
+              <div
+                className="image-container"
+                style={{ borderWidth: activeImageIndex === index ? 1 : 0 }}
+                key={index}
+                onClick={() => setActiveImageIndex(index)}
+              >
+                <img src={source} alt="Dress" />
+              </div>
+            ))}
+          </div>
         </div>
         <div className="product-content">
           <div className="row">

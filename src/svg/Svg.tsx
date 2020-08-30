@@ -178,12 +178,26 @@ export function Cancel() {
   );
 }
 
-export function ChevronLeft() {
+export function ChevronLeft({ size, color }: SvgProps) {
   return (
-    <svg width={11} height={18} viewBox="0 0 11 18" fill="none">
+    <svg width={size} height={size * 1.63} viewBox="0 0 11 18" fill="none">
       <path
         d="M9.603 1l-8 8 8 8"
-        stroke="#D1D1D6"
+        stroke={color}
+        strokeWidth={2}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+
+export function ChevronRight({ size, color }: SvgProps) {
+  return (
+    <svg width={size} height={size * 1.63} viewBox="0 0 11 18" fill="none">
+      <path
+        d="M1.397 17l8-8-8-8"
+        stroke={color}
         strokeWidth={2}
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -212,20 +226,6 @@ export function ArrowRight() {
       <path
         d="M18 6l10 10-10 10M28 16H2.837"
         stroke="#EDA3B5"
-        strokeWidth={2}
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
-  );
-}
-
-export function ChevronRight() {
-  return (
-    <svg width={11} height={18} viewBox="0 0 11 18" fill="none">
-      <path
-        d="M1.397 17l8-8-8-8"
-        stroke="#D1D1D6"
         strokeWidth={2}
         strokeLinecap="round"
         strokeLinejoin="round"
