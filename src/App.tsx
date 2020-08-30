@@ -5,17 +5,19 @@ import {
   Banner,
   Collections,
   Products,
-  DressProductCard,
+  DressProduct,
+  ElegantDress,
 } from "./components";
 
 function App() {
   return (
     <>
       <Header />
+      <ElegantDress />
       <Banner />
       <Collections />
       <Products />
-      <DressProductCard />
+      <DressProduct />
     </>
   );
 }

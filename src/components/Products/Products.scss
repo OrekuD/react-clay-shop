@@ -1,14 +1,11 @@
 @import "../../constants/variables.scss";
 
-$width: calc(((100vw - 200px) / 3) - 20px);
-$height: calc((((100vw - 200px) / 3) - 20px) * 2);
-
 .products {
-  padding: 0px 100px;
+  padding: 0px;
 
   .card-title {
     color: $purple;
-    margin: 30px 0;
+    margin-bottom: 30px;
     font-size: 30px;
   }
 
@@ -18,8 +15,8 @@ $height: calc((((100vw - 200px) / 3) - 20px) * 2);
     flex-wrap: wrap;
 
     .product {
-      width: $width;
-      height: $height;
+      width: calc(33% - 20px);
+      height: calc(((33.33vw - 100px) -20px) * 2);
       border-radius: 10px;
       margin-bottom: 20px;
       background-color: #ffffff;

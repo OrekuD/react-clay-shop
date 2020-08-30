@@ -1,1 +1,2 @@
-export { default as DressProductCard } from "./DressProductCard/DressProductCard";
+export { default as DressProduct } from "./DressProduct/DressProduct";
+export { default as ElegantDress } from "./ElegantDress/ElegantDress";

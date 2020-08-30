@@ -1,13 +1,13 @@
-$largeCardWidth: calc(((100vw - 200px) / 2) - 20px);
-$largeCardHeight: calc((((100vw - 200px) / 2) - 20px) * 0.788);
-$smallCardWidth: calc(((((100vw - 200px) / 2) - 20px) / 2) - 10px);
-$smallCardHeight: calc((((((100vw - 200px) / 2) - 20px) * 0.788) / 2) - 10px);
+// $largeCardWidth: calc(((100vw - 200px) / 2) - 20px);
+// $largeCardHeight: calc((((100vw - 200px) / 2) - 20px) * 0.788);
+// $smallCardWidth: calc(((((100vw - 200px) / 2) - 20px) / 2) - 10px);
+// $smallCardHeight: calc((((((100vw - 200px) / 2) - 20px) * 0.788) / 2) - 10px);
 
 @import "../../../constants/variables.scss";
 
 .women-collection {
-  width: $largeCardWidth;
-  height: $largeCardHeight;
+  width: calc(50% - 20px);
+  height: calc(((50vw - 100px) - 20px) * 0.788);
   border-radius: 10px;
   background-image: linear-gradient(#d1bdc9, #8e7e88);
   padding-top: 40px;
@@ -37,8 +37,8 @@ $smallCardHeight: calc((((((100vw - 200px) / 2) - 20px) * 0.788) / 2) - 10px);
 }
 
 .bestsellers {
-  width: $smallCardWidth;
-  height: $smallCardHeight;
+  width: calc(50% - 10px);
+  height: calc((((((100vw - 200px) / 2) - 20px) * 0.788) / 2) - 10px);
   border-radius: 10px;
   background-color: #efeff4;
   margin-bottom: 20px;
@@ -57,8 +57,8 @@ $smallCardHeight: calc((((((100vw - 200px) / 2) - 20px) * 0.788) / 2) - 10px);
 }
 
 .dresses {
-  width: $smallCardWidth;
-  height: $smallCardHeight;
+  width: calc(50% - 10px);
+  height: calc((((((100vw - 200px) / 2) - 20px) * 0.788) / 2) - 10px);
   border-radius: 10px;
   background-image: radial-gradient(#62579b, #4f477a, #4f477a);
   margin-bottom: 20px;
@@ -85,8 +85,8 @@ $smallCardHeight: calc((((((100vw - 200px) / 2) - 20px) * 0.788) / 2) - 10px);
 }
 
 .denim-jacket {
-  width: $largeCardWidth;
-  height: $smallCardHeight;
+  width: 100%;
+  height: calc((((((100vw - 200px) / 2) - 20px) * 0.788) / 2) - 10px);
   border-radius: 10px;
   background-image: linear-gradient(to right, #eda2b6, #f1cfcd);
   position: relative;
@@ -98,7 +98,7 @@ $smallCardHeight: calc((((((100vw - 200px) / 2) - 20px) * 0.788) / 2) - 10px);
     object-fit: contain;
     z-index: 0;
     margin-top: 20px;
-    margin-left: $smallCardWidth;
+    margin-left: 50%;
   }
 
   .content {

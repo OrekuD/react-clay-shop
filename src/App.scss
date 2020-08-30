@@ -4,17 +4,6 @@
   box-sizing: border-box;
 }
 
-html {
-  font-size: 16px;
-}
-
-body {
-  font-family: "PlayfairRegular";
-  background-color: #f6f6f6;
-}
-
-@import "./constants/variables.scss";
-
 @font-face {
   font-family: "PlayfairBold";
   src: url(./assets/fonts/PlayfairDisplay-Bold.ttf);
@@ -49,3 +38,18 @@ body {
   font-family: "MuliRegular";
   src: url(./assets/fonts/Muli.ttf);
 }
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "PlayfairRegular";
+  background-color: #f6f6f6;
+}
+
+.wrapper {
+  padding: 0 100px;
+}
+
+@import "./constants/variables.scss";
