@@ -4,13 +4,7 @@ import Image3 from "../assets/images/products-3.png";
 import Image4 from "../assets/images/products-4.png";
 import Image5 from "../assets/images/products-5.png";
 import Image6 from "../assets/images/products-6.png";
-
-interface ProductProps {
-  name: string;
-  image: string;
-  price: number;
-  description?: string;
-}
+import { ProductProps } from "../types";
 
 export const products: ProductProps[] = [
   {
@@ -48,10 +42,10 @@ export const products: ProductProps[] = [
       "Off-White scuffed denim jacket. Faded effect, baggy cut, pointed collar, clasp…",
   },
   {
-    name: "Shiny dress",
+    name: "Cotton blouse Dries van noten",
     image: Image6,
-    price: 54,
+    price: 180,
     description:
-      "A shiny dress in the style of Lady Gaga, for bright events and cool parties…",
+      "The fedora hat is reimagined for pre-fall 202 with a maxi embroided label design",
   },
 ];

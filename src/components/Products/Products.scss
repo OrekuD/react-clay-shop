@@ -13,49 +13,49 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+  }
+}
 
-    .product {
-      width: calc(33% - 20px);
-      height: calc(((33.33vw - 100px) -20px) * 2);
-      border-radius: 10px;
-      margin-bottom: 20px;
-      background-color: #ffffff;
-      overflow: hidden;
+.product {
+  width: 364px;
+  height: 560px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  overflow: hidden;
 
-      img {
-        width: 100%;
-        height: 50%;
-        object-fit: cover;
-      }
+  img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+  }
 
-      .content {
-        width: 100%;
-        height: 50%;
-        padding: 20px 30px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+  .content {
+    width: 100%;
+    height: 50%;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
-        .card-title {
-          color: $purple;
-          font-size: 30px;
-          width: 60%;
-          margin: 0;
-        }
+    .card-title {
+      color: $purple;
+      font-size: 30px;
+      width: 60%;
+      margin: 0;
+    }
 
-        .description {
-          font-family: "MuliRegular";
-          font-size: 18px;
-          color: $purple;
-          margin-top: 20px;
-        }
+    .description {
+      font-family: "MuliRegular";
+      font-size: 18px;
+      color: $purple;
+      margin-top: 20px;
+    }
 
-        .bottom-section {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-        }
-      }
+    .bottom-section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
   }
 }

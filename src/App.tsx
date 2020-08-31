@@ -8,22 +8,33 @@ import {
   DressProduct,
   ElegantDress,
   WhiteDress,
+  ProductCard,
+  ShinyDress,
+  RedDress,
 } from "./components";
+import { products } from "./data/products";
 
 function App() {
   return (
     <>
       <Header />
+      <Banner />
       <div className="wrapper">
         <div className="section">
           <ElegantDress />
+          <ProductCard product={products[3]} />
           <WhiteDress />
         </div>
       </div>
-      <Banner />
       <Collections />
       <Products />
       <DressProduct />
+      <div className="wrapper">
+        <div className="section">
+          <ShinyDress />
+          <RedDress />
+        </div>
+      </div>
     </>
   );
 }

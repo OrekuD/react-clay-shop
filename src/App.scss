@@ -39,6 +39,8 @@
   src: url(./assets/fonts/Muli.ttf);
 }
 
+@import "./constants/variables.scss";
+
 html {
   font-size: 16px;
 }
@@ -49,12 +51,11 @@ body {
 }
 
 .wrapper {
-  padding: 0 100px;
+  padding: 0 80px;
 
   .section {
     display: flex;
     justify-content: space-between;
+    margin-top: 50px;
   }
 }
-
-@import "./constants/variables.scss";

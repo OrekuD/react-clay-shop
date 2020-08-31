@@ -1,0 +1,65 @@
+@import "../../../constants/variables.scss";
+
+.shiny-dress {
+  width: 558px;
+  height: 340px;
+  border-radius: 16px;
+  background-color: white;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+
+  img {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .content {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 60%;
+    height: 100%;
+    background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 1)
+    );
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 20px 0px 20px 60px;
+
+    .badge {
+      width: 93px;
+      height: 32px;
+      background-color: $lightgrey;
+      display: grid;
+      place-items: center;
+      border-radius: 8px;
+
+      p {
+        font-family: "MuliBold";
+        font-size: 14px;
+        color: $purple;
+        margin-bottom: 3px;
+      }
+    }
+
+    .name {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+
+    .card-title {
+      color: $purple;
+    }
+  }
+}

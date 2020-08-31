@@ -1,5 +1,11 @@
 export { default as Header } from "./Header/Header";
 export { default as Banner } from "./Banner/Banner";
 export { default as Collections } from "./Collections/Collections";
-export { default as Products } from "./Products/Products";
-export { DressProduct, ElegantDress, WhiteDress } from "./ProductCards";
+export { Products, ProductCard } from "./Products";
+export {
+  DressProduct,
+  ElegantDress,
+  WhiteDress,
+  ShinyDress,
+  RedDress,
+} from "./ProductCards";
