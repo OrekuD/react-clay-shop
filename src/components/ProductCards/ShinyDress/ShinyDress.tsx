@@ -1,6 +1,6 @@
 import React from "react";
 import "./ShinyDress.scss";
-import Image from "../../../assets/images/shiny-dress.png";
+import Image from "../../../assets/images/shiny-dress.jpg";
 
 const ShinyDress = () => (
   <div className="shiny-dress">

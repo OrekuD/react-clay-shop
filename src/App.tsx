@@ -11,6 +11,7 @@ import {
   ProductCard,
   ShinyDress,
   RedDress,
+  Footer,
 } from "./components";
 import { products } from "./data/products";
 
@@ -35,6 +36,7 @@ function App() {
           <RedDress />
         </div>
       </div>
+      <Footer />
     </>
   );
 }

@@ -1,9 +1,9 @@
-import Image1 from "../assets/images/products-1.png";
-import Image2 from "../assets/images/products-2.png";
-import Image3 from "../assets/images/products-3.png";
-import Image4 from "../assets/images/products-4.png";
-import Image5 from "../assets/images/products-5.png";
-import Image6 from "../assets/images/products-6.png";
+import Image1 from "../assets/images/products-1.jpg";
+import Image2 from "../assets/images/products-2.jpg";
+import Image3 from "../assets/images/products-3.jpg";
+import Image4 from "../assets/images/products-4.jpg";
+import Image5 from "../assets/images/products-5.jpg";
+import Image6 from "../assets/images/products-6.jpg";
 import { ProductProps } from "../types";
 
 export const products: ProductProps[] = [

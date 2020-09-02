@@ -1,6 +1,6 @@
 import React from "react";
 import "./RedDress.scss";
-import Image from "../../../assets/images/red-dress.png";
+import Image from "../../../assets/images/red-dress.jpg";
 
 const RedDress = () => (
   <div className="red-dress">

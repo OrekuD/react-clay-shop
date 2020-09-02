@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import "./DressProduct.scss";
 import Image1 from "../../../assets/images/dress-1.jpg";
-import Image2 from "../../../assets/images/dress-2.png";
-import Image3 from "../../../assets/images/dress-3.png";
-import Image4 from "../../../assets/images/dress-4.png";
-import Image5 from "../../../assets/images/dress-5.png";
+import Image3 from "../../../assets/images/dress-3.jpg";
+import Image4 from "../../../assets/images/dress-4.jpg";
+import Image5 from "../../../assets/images/dress-5.jpg";
 import HeartIcon from "../../../assets/icons/heart_icn.png";
 import { Star, ChevronRight, ChevronLeft } from "../../../svg/Svg";
 import { pink, lightgrey, purple } from "../../../constants/Colors";
@@ -12,7 +11,6 @@ import { Info, Brand, Delivery } from "./Tabs";
 
 const images = [
   { source: Image1 },
-  { source: Image2 },
   { source: Image3 },
   { source: Image4 },
   { source: Image5 },

@@ -1,6 +1,6 @@
 import React from "react";
 import "./ElegantDress.scss";
-import Image from "../../../assets/images/elegant-dress.png";
+import Image from "../../../assets/images/elegant-dress.jpg";
 import HeartIcon from "../../../assets/icons/heart_icn.png";
 
 const ElegantDress = () => {
