@@ -85,8 +85,7 @@ const DressProduct = () => {
               <img src={HeartIcon} alt="heart-icon" />
             </div>
           </div>
-          <p className="card-title">Black Valentino</p>
-          <p className="card-title">dress with tulle</p>
+          <p className="card-title">Black Valentino dress</p>
           <div className="rating-container">
             {starRatings.map((color, index) => (
               <div className="star">

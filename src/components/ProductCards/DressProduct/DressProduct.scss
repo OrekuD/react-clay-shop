@@ -3,12 +3,16 @@
 .dress-product-container {
   padding: 20px 100px;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1280px) {
     padding: 20px 60px;
   }
 
-  @media (max-width: 920px) {
+  @media (max-width: 1924px) {
     padding: 20px 30px;
+  }
+
+  @media (max-width: 720px) {
+    display: none;
   }
 
   .dress-product-card {
@@ -17,8 +21,14 @@
     display: flex;
     background: white;
 
-    @media (max-width: 720px) {
-      display: none;
+    @media (max-width: 1280px) {
+      padding: 20px;
+      height: calc((100vw - 120px) * 0.57);
+    }
+
+    @media (max-width: 1024px) {
+      padding: 10px;
+      height: calc((100vw - 90px) * 0.57);
     }
 
     .images-section {
@@ -134,8 +144,24 @@
         font-size: 48px;
         margin-top: 3px;
 
+        @media (max-width: 1280px) {
+          font-size: 32px;
+        }
+
+        @media (max-width: 1024px) {
+          font-size: 26px;
+        }
+
         &:first-of-type {
           margin-top: 30px;
+
+          @media (max-width: 1024px) {
+            margin-top: 15px;
+          }
+
+          @media (max-width: 920px) {
+            margin-top: 10px;
+          }
         }
       }
 
@@ -143,6 +169,10 @@
         display: flex;
         align-items: center;
         margin-top: 15px;
+
+        @media (max-width: 920px) {
+          margin-top: 10px;
+        }
 
         .star {
           margin-right: 10px;
@@ -158,6 +188,10 @@
         margin: 20px 0;
         width: 92%;
         display: flex;
+
+        @media (max-width: 920px) {
+          display: none;
+        }
 
         .tab {
           flex: 1;
@@ -177,6 +211,10 @@
       .tab-content {
         padding-top: 5px;
 
+        @media (max-width: 920px) {
+          display: none;
+        }
+
         .info-container {
           p {
             color: #8e8e93;
@@ -187,6 +225,10 @@
             display: flex;
             // align-items: center;
             margin-top: 25px;
+
+            @media (max-width: 1024px) {
+              margin-top: 10px;
+            }
 
             p {
               color: $purple;
@@ -212,6 +254,10 @@
 
             .colors-container {
               margin-left: 30px;
+
+              @media (max-width: 920px) {
+                margin-left: 15px;
+              }
 
               .colors {
                 display: flex;
@@ -244,13 +290,18 @@
       .bottom-row {
         display: flex;
         align-items: center;
-
-        .card-title {
-          font-size: 34px;
-        }
+        flex-wrap: wrap;
 
         button {
           margin-top: 30px;
+
+          @media (max-width: 1280px) {
+            margin-top: 10px;
+          }
+
+          @media (max-width: 920px) {
+            margin-top: 30px;
+          }
 
           &:first-of-type {
             margin-left: 30px;
