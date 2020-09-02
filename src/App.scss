@@ -53,10 +53,26 @@ body {
 .wrapper {
   padding: 0 80px;
 
+  @media (max-width: 1024px) {
+    padding: 0 50px;
+  }
+
+  @media (max-width: 920px) {
+    padding: 0 30px;
+  }
+
+  @media (max-width: 720px) {
+    padding: 0 15px;
+  }
+
   .section {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    // justify-content: space-between;
     margin-top: 50px;
+
+    @media (max-width: 720px) {
+      margin-top: 30px;
+    }
   }
 }

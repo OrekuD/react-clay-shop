@@ -29,7 +29,7 @@ function App() {
       </div>
       <Collections />
       <Products />
-      <DressProduct />
+      {/* <DressProduct /> */}
       <div className="wrapper">
         <div className="section">
           <ShinyDress />

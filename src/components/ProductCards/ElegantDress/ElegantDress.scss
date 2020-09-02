@@ -6,7 +6,22 @@
   border-radius: 15px;
   overflow: hidden;
   position: relative;
-  margin-bottom: 20px;
+  margin: 0 auto 20px auto;
+
+  @media (max-width: 920px) {
+    width: 320px;
+    min-height: 320px * 1.54;
+  }
+
+  @media (max-width: 720px) {
+    width: calc(100vw - 80px);
+    height: calc((100vw - 80px) * 1.54);
+  }
+
+  @media (max-width: 500px) {
+    width: calc(100vw - 30px);
+    height: calc((100vw - 30px) * 1.54);
+  }
 
   img {
     width: 100%;

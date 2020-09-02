@@ -29,7 +29,7 @@ const DressProduct = () => {
   const [activeTabIndex, setActiveTabIndex] = useState<number>(0);
 
   return (
-    <div className="cards-container">
+    <div className="dress-product-container">
       <div className="dress-product-card">
         <div className="images-section">
           <div className="active-image-container">

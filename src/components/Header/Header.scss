@@ -32,6 +32,10 @@ header {
       display: flex;
       align-items: center;
 
+      @media (max-width: 720px) {
+        display: none;
+      }
+
       .icon {
         margin: 0 20px;
         cursor: pointer;
@@ -41,6 +45,10 @@ header {
     .extra-links {
       display: flex;
       align-items: center;
+
+      @media (max-width: 500px) {
+        display: none;
+      }
 
       img {
         width: 20px;
@@ -62,6 +70,11 @@ header {
       margin: 0 30px;
       font-size: 1.4rem;
       color: $purple;
+
+      @media (max-width: 720px) {
+        margin: 0 15px;
+        font-size: 1.1rem;
+      }
     }
   }
 }

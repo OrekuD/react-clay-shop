@@ -5,6 +5,18 @@
   padding-right: 200px;
   position: relative;
 
+  @media (max-width: 1024px) {
+    padding-right: 120px;
+  }
+
+  @media (max-width: 920px) {
+    padding-right: 40px;
+  }
+
+  @media (max-width: 720px) {
+    padding: 10px;
+  }
+
   .line {
     position: absolute;
     bottom: 0;
@@ -14,6 +26,10 @@
     background-image: linear-gradient(#d1d1d6, #ffffff);
     z-index: 0;
     opacity: 0.8;
+
+    @media (max-width: 920px) {
+      display: none;
+    }
   }
 
   .content {
@@ -23,6 +39,19 @@
     flex-direction: column;
     justify-content: center;
     padding-left: 100px;
+
+    @media (max-width: 1024px) {
+      padding-left: 87px;
+    }
+
+    @media (max-width: 920px) {
+      padding-left: 30px;
+    }
+
+    @media (max-width: 720px) {
+      width: 100%;
+      padding-left: 10px;
+    }
 
     .title {
       font-size: 48px;
@@ -58,6 +87,10 @@
     z-index: 10;
     display: flex;
     align-items: flex-end;
+
+    @media (max-width: 720px) {
+      display: none;
+    }
 
     img {
       width: 100%;

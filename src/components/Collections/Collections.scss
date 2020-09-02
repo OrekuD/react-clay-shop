@@ -4,6 +4,10 @@
   align-items: center;
   height: calc(((50vw - 100px) + 60px) * 0.788);
 
+  @media (max-width: 720px) {
+    display: none;
+  }
+
   .right-container {
     padding-left: 20px;
     width: 50%;
