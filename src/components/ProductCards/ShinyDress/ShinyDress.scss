@@ -2,17 +2,26 @@
 
 .shiny-dress {
   width: 558px;
-  height: 340px;
+  min-height: 340px;
   border-radius: 16px;
   background-color: white;
   display: flex;
   overflow: hidden;
   position: relative;
+  margin: 20px auto;
+
+  @media (max-width: 620px) {
+    width: 100%;
+  }
 
   img {
     width: 50%;
     height: 100%;
     object-fit: cover;
+
+    @media (max-width: 400px) {
+      display: none;
+    }
   }
 
   .content {
@@ -36,6 +45,11 @@
     flex-direction: column;
     justify-content: space-evenly;
     padding: 20px 0px 20px 60px;
+
+    @media (max-width: 400px) {
+      width: 100%;
+      padding: 20px;
+    }
 
     .badge {
       width: 93px;

@@ -8,11 +8,16 @@
   display: flex;
   overflow: hidden;
   position: relative;
+  margin: 20px auto;
 
   img {
     width: 50%;
     height: 100%;
     object-fit: cover;
+
+    @media (max-width: 400px) {
+      display: none;
+    }
   }
 
   .content {
@@ -31,6 +36,15 @@
     flex-direction: column;
     justify-content: space-evenly;
     padding: 20px 0px 20px 30px;
+
+    @media (max-width: 500px) {
+      padding-left: 15px;
+    }
+
+    @media (max-width: 400px) {
+      width: 100%;
+      padding: 20px;
+    }
 
     .badge {
       width: 93px;

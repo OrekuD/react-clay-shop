@@ -27,15 +27,15 @@ function App() {
           <WhiteDress />
         </div>
       </div>
-      <Collections />
-      <Products />
-      {/* <DressProduct /> */}
       <div className="wrapper">
         <div className="section">
           <ShinyDress />
           <RedDress />
         </div>
       </div>
+      <Collections />
+      <Products />
+      <DressProduct />
       <Footer />
     </>
   );
