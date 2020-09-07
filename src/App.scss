@@ -5,38 +5,27 @@
 }
 
 @font-face {
-  font-family: "PlayfairBold";
-  src: url(./assets/fonts/PlayfairDisplay-Bold.ttf);
-}
-
-@font-face {
   font-family: "PlayfairRegular";
   src: url(./assets/fonts/PlayfairDisplay-Regular.ttf);
-}
-
-@font-face {
-  font-family: "PlayfairMedium";
-  src: url(./assets/fonts/PlayfairDisplay-Medium.ttf);
-}
-
-@font-face {
-  font-family: "PlayfairSemiBold";
-  src: url(./assets/fonts/PlayfairDisplay-SemiBold.ttf);
+  font-display: swap;
 }
 
 @font-face {
   font-family: "MuliBold";
   src: url(./assets/fonts/Muli-Bold.ttf);
+  font-display: swap;
 }
 
 @font-face {
   font-family: "MuliSemiBold";
   src: url(./assets/fonts/Muli-SemiBold.ttf);
+  font-display: swap;
 }
 
 @font-face {
   font-family: "MuliRegular";
   src: url(./assets/fonts/Muli.ttf);
+  font-display: swap;
 }
 
 @import "./constants/variables.scss";

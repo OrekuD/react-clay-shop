@@ -2,15 +2,15 @@
   height: 540px;
   background-color: #baafab;
   display: flex;
-  padding-right: 200px;
+  padding-right: 150px;
   position: relative;
 
   @media (max-width: 1024px) {
-    padding-right: 120px;
+    padding-right: 100px;
   }
 
   @media (max-width: 920px) {
-    padding-right: 40px;
+    padding-right: 30px;
   }
 
   @media (max-width: 720px) {
